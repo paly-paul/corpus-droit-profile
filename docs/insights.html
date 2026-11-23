@@ -1,148 +1,248 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insights &amp; Statutory Library | Corpus Droit</title>
+  <title>Insights — Corpus Droit</title>
+  <meta name="description" content="Legal publications, case analyses, and statutory resources on Indian admiralty, maritime, and commercial law from Corpus Droit.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
 </head>
-<body class="bg-brand-ivory-50 text-brand-ink-800 antialiased">
+<body>
 
-  <div class="bg-brand-red-950 text-brand-ivory-100 text-[11px] py-2 px-4 sm:px-8 border-b border-brand-brass/30">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <span class="flex items-center gap-2 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 24/7 Admiralty &amp; Maritime Casualty Desk</span>
-      <a href="tel:+919744093339" class="hover:text-brand-brass transition font-semibold">+91 974409 3339</a>
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div class="top-strip__inner">
+      <div class="top-strip__status">
+        <span class="pulse-dot"></span>
+        <span>Chambers Open</span>
+        <span class="top-strip__location">· Mumbai &amp; Kochi</span>
+      </div>
+      <div class="top-strip__contacts">
+        <a href="tel:+919999999999">
+          <i data-lucide="phone-call" class="w-3 h-3"></i>
+          <span>Emergency: +91 99999 99999</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <header class="sticky top-0 z-50 glass-ivory">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3.5">
-        <div class="w-10 h-10 rounded-[3px] bg-brand-red-800 text-brand-ivory-50 font-logo font-bold text-lg flex items-center justify-center border border-brand-brass/40">CD</div>
-        <div class="flex flex-col">
-          <span class="font-logo text-xl sm:text-2xl font-bold tracking-[0.16em] text-brand-red-950">CORPUS DROIT</span>
-          <span class="text-[9px] tracking-[0.26em] text-brand-red-800 uppercase font-bold -mt-0.5">Lawyers &amp; Consultants</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="corpus droit index.html" class="logo">
+        <div class="logo__mark">CD</div>
+        <div class="logo__text">
+          <span class="logo__name">CORPUS DROIT</span>
+          <span class="logo__sub">Advocates &amp; Maritime Legal Consultants</span>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-brand-ink-800">
-        <a href="index.html" class="hover:text-brand-red-800 transition">Overview</a>
-        <a href="practices.html" class="hover:text-brand-red-800 transition">Practice Areas</a>
-        <a href="dispute-resolution.html" class="hover:text-brand-red-800 transition">Dispute Resolution</a>
-        <a href="insights.html" class="nav-link-active">Insights &amp; Statutes</a>
-        <a href="contact.html" class="px-5 py-2.5 bg-brand-red-800 text-brand-ivory-50 rounded-[3px] hover:bg-brand-red-700 transition">Chambers &amp; Contact</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="corpus droit index.html">Home</a></li>
+          <li><a href="practices.html">Practice Areas</a></li>
+          <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+          <li><a href="insights.html" class="nav-active">Insights</a></li>
+          <li><a href="contact.html" class="btn-cta">Consult</a></li>
+        </ul>
       </nav>
-      <button id="mobileMenuBtn" class="lg:hidden text-brand-red-950 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </div>
-    <div id="mobileMenu" class="hidden lg:hidden bg-brand-ivory-50 border-t border-brand-ivory-200 px-6 py-5 space-y-3 text-xs font-bold uppercase tracking-wider">
-      <a href="index.html" class="block py-2">Overview</a>
-      <a href="practices.html" class="block py-2">Practice Areas</a>
-      <a href="dispute-resolution.html" class="block py-2">Dispute Resolution</a>
-      <a href="insights.html" class="block py-2 text-brand-red-800">Insights &amp; Statutes</a>
-      <a href="contact.html" class="block py-2 text-brand-red-800">Chambers &amp; Contact</a>
-    </div>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="corpus droit index.html">Home</a></li>
+      <li><a href="practices.html">Practice Areas</a></li>
+      <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+      <li><a href="insights.html" class="nav-active">Insights</a></li>
+      <li><a href="contact.html">Consult</a></li>
+    </ul>
   </header>
 
-  <main>
-    <section class="bg-brand-red-950 text-brand-ivory-50 py-20 border-b-2 border-brand-brass/40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 max-w-3xl">
-        <span class="text-[11px] font-bold text-brand-brass uppercase tracking-[0.18em]">— Library &amp; Thought Leadership</span>
-        <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2 mb-4">Publications &amp; Legal Norms</h1>
-        <p class="text-sm text-brand-ivory-200 leading-relaxed">
-          Staging interdisciplinary legal views from our partners, associates, and guest contributors. We also invite short articles on divergent legal issues via email or post.
-        </p>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Legal library" loading="eager">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content" style="text-align:center;">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:var(--space-4);">
+        <i data-lucide="file-search" class="w-3 h-3"></i>
+        <span>Publications &amp; Analysis</span>
       </div>
-    </section>
+      <h1>Insights</h1>
+      <p>Case analyses, statutory commentaries, and practice notes on Indian maritime and commercial law.</p>
+    </div>
+  </section>
 
-    <section class="py-20 bg-brand-ivory-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8">
-        <!-- Interactive Category Filters -->
-        <div class="flex flex-wrap gap-3 mb-10">
-          <button data-filter="all" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-red-800 text-brand-ivory-50 transition">All Briefs</button>
-          <button data-filter="admiralty" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Admiralty</button>
-          <button data-filter="arbitration" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Arbitration</button>
-          <button data-filter="regulatory" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Port &amp; Regulatory</button>
+  <!-- Publications -->
+  <section style="padding:var(--space-20) 0;background-color:var(--ivory-50);">
+    <div class="container">
+
+      <!-- Filter Row -->
+      <div class="filter-row">
+        <button class="filter-btn active" data-cat="all">All Publications</button>
+        <button class="filter-btn" data-cat="admiralty">Admiralty</button>
+        <button class="filter-btn" data-cat="arbitration">Arbitration</button>
+        <button class="filter-btn" data-cat="regulatory">Regulatory</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6);margin-bottom:var(--space-16);">
+
+        <div class="article-card" data-cat="admiralty">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Vessel arrest">
+          <div class="article-card__body">
+            <div class="article-card__cat">Admiralty</div>
+            <h3>Sister Ship Arrest under the 2017 Admiralty Act: Scope and Limitations</h3>
+            <p>An analysis of Section 5 of the Admiralty Act, 2017 and the courts' evolving interpretation of "associated ship" in the Indian context.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Adv. R. Menon · June 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <article data-category="admiralty" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
-            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" alt="Vessel at Sea" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Admiralty Jurisprudence</span>
-              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Beneficial Ownership in Sister Ship Arrests</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed">Analyzing how Indian High Courts evaluate corporate veils and bareboat charters under the Admiralty Act 2017.</p>
-            </div>
-            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
-              <span class="text-brand-ink-400">Maritime Desk</span>
-              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
-            </div>
-          </article>
-
-          <article data-category="arbitration" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
-            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Law Library" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Commercial Arbitration</span>
-              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Enforcing Foreign Maritime Awards in India</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed">Navigating Section 48 of the Arbitration &amp; Conciliation Act and the narrowed scope of public policy objections.</p>
-            </div>
-            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
-              <span class="text-brand-ink-400">ADR Practice</span>
-              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
-            </div>
-          </article>
-
-          <article data-category="regulatory" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
-            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Container Terminal" class="w-full h-48 object-cover">
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Port Regulations</span>
-              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Major Port Authorities Act &amp; Terminal Concessions</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed">Market-driven port tariffs, PPP concession frameworks, and statutory dispute adjudication boards.</p>
-            </div>
-            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
-              <span class="text-brand-ink-400">Regulatory Desk</span>
-              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
-            </div>
-          </article>
+        <div class="article-card" data-cat="arbitration">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Arbitration chamber">
+          <div class="article-card__body">
+            <div class="article-card__cat">Arbitration</div>
+            <h3>Section 9 Interim Relief: Post-Award Applications and the BALCO Principle</h3>
+            <p>Examining the Supreme Court's ruling in Essar House v. Arcellor Mittal and its implications for post-award interim protection in maritime disputes.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Adv. P. Krishnan · May 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
         </div>
 
-        <!-- STATUTORY NORMS DIRECTORY -->
-        <div class="p-8 bg-brand-ivory-100 border border-brand-ivory-200 rounded-md">
-          <h3 class="font-serif text-2xl font-bold text-brand-ink-950 mb-2">Legal Norms &amp; Statutory Repository</h3>
-          <p class="text-xs text-brand-ink-600 mb-6">Core legislative texts frequently referenced in maritime and commercial mandates.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-            <div class="p-4 bg-brand-ivory-50 border border-brand-ivory-200 rounded flex justify-between items-center">
-              <div>
-                <strong class="text-brand-ink-950">Admiralty (Jurisdiction &amp; Settlement of Maritime Claims) Act, 2017</strong>
-                <p class="text-[11px] text-brand-ink-600 mt-0.5">Section 4 maritime claims, arrest jurisdiction &amp; priority of liens</p>
-              </div>
-              <a href="contact.html" class="text-brand-red-800 font-bold hover:underline ml-4 whitespace-nowrap">Request Copy</a>
+        <div class="article-card" data-cat="regulatory">
+          <img src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137?w=600&q=80" alt="Port regulation">
+          <div class="article-card__body">
+            <div class="article-card__cat">Regulatory</div>
+            <h3>Major Port Authorities Act, 2021: Commercial Impact on Shipping Operators</h3>
+            <p>A practitioner's overview of the new port governance framework, PPP provisions, and implications for vessel operators and terminal concessionaires.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Corpus Droit · April 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
+        </div>
+
+        <div class="article-card" data-cat="admiralty">
+          <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=600&q=80" alt="High Court">
+          <div class="article-card__body">
+            <div class="article-card__cat">Admiralty</div>
+            <h3>Priority of Maritime Liens over Registered Ship Mortgages in India</h3>
+            <p>How Indian courts rank competing claims against a vessel — from crew wages and salvage to mortgagee banks and necessaries suppliers.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Adv. R. Menon · March 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
+        </div>
+
+        <div class="article-card" data-cat="arbitration">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Commercial contract">
+          <div class="article-card__body">
+            <div class="article-card__cat">Arbitration</div>
+            <h3>Enforcement of LMAA Awards in India: A Practical Guide</h3>
+            <p>Step-by-step guide to enforcing London Maritime Arbitrators Association awards in Indian courts, with timelines and common defences.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Adv. S. Nair · February 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
+        </div>
+
+        <div class="article-card" data-cat="regulatory">
+          <img src="https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=600&q=80" alt="Singapore port">
+          <div class="article-card__body">
+            <div class="article-card__cat">Regulatory</div>
+            <h3>Cabotage Liberalisation and Its Effect on Foreign Vessel Operators in India</h3>
+            <p>Analysis of the 2018 Merchant Shipping Act amendments liberalising coastal trade, and practical compliance considerations for foreign shipowners.</p>
+          </div>
+          <div class="article-card__footer">
+            <span class="article-card__author">Corpus Droit · January 2024</span>
+            <a href="contact.html" class="article-card__link">Read →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Statutory Repository -->
+      <div style="margin-bottom:var(--space-10);">
+        <div class="section-label" style="margin-bottom:var(--space-3);">Reference Library</div>
+        <h2 class="section-title" style="margin-bottom:var(--space-8);">Statutory Repository</h2>
+        <div class="statute-grid">
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">Admiralty (Jurisdiction and Settlement of Maritime Claims) Act, 2017</div>
+              <div class="statute-item__sub">Vessel arrest, maritime claims, in rem jurisdiction</div>
             </div>
-            <div class="p-4 bg-brand-ivory-50 border border-brand-ivory-200 rounded flex justify-between items-center">
-              <div>
-                <strong class="text-brand-ink-950">Arbitration and Conciliation Act, 1996</strong>
-                <p class="text-[11px] text-brand-ink-600 mt-0.5">UNCITRAL Model Law &amp; New York / Geneva Convention enforcement</p>
-              </div>
-              <a href="contact.html" class="text-brand-red-800 font-bold hover:underline ml-4 whitespace-nowrap">Request Copy</a>
+            <a href="contact.html" class="statute-item__link">View →</a>
+          </div>
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">Arbitration &amp; Conciliation Act, 1996</div>
+              <div class="statute-item__sub">Domestic and international arbitration, enforcement</div>
             </div>
+            <a href="contact.html" class="statute-item__link">View →</a>
+          </div>
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">Merchant Shipping Act, 1958</div>
+              <div class="statute-item__sub">Vessel registration, ISM, manning, casualty investigation</div>
+            </div>
+            <a href="contact.html" class="statute-item__link">View →</a>
+          </div>
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">Major Port Authorities Act, 2021</div>
+              <div class="statute-item__sub">Port governance, PPP, tariff regulation</div>
+            </div>
+            <a href="contact.html" class="statute-item__link">View →</a>
+          </div>
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">SARFAESI Act, 2002</div>
+              <div class="statute-item__sub">Secured asset enforcement, DRT proceedings</div>
+            </div>
+            <a href="contact.html" class="statute-item__link">View →</a>
+          </div>
+          <div class="statute-item">
+            <div>
+              <div class="statute-item__title">Insolvency &amp; Bankruptcy Code, 2016</div>
+              <div class="statute-item__sub">CIRP, liquidation, maritime entity insolvency</div>
+            </div>
+            <a href="contact.html" class="statute-item__link">View →</a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="bg-brand-red-950 text-brand-ivory-200 py-10 border-t-2 border-brand-brass/40 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div>&copy; 2013 &ndash; 2026 Corpus Droit. Lawyers &amp; Consultants, Ernakulam.</div>
-      <div class="flex gap-6">
-        <button onclick="reopenDisclaimer()" class="hover:text-brand-brass">Bar Council Disclaimer</button>
-        <a href="contact.html" class="text-brand-brass font-bold">Contact Chambers</a>
+  <!-- Footer -->
+  <footer class="site-footer-simple">
+    <div class="site-footer-simple__inner">
+      <div>
+        <span style="font-family:var(--font-logo);font-weight:700;letter-spacing:0.14em;color:var(--ivory-50);">CORPUS DROIT</span>
+        <span style="margin-left:12px;">© 2024 All Rights Reserved.</span>
+      </div>
+      <div class="site-footer-simple__links">
+        <a href="corpus droit index.html">Home</a>
+        <a href="practices.html">Practices</a>
+        <a href="dispute-resolution.html">Disputes</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="reopenDisclaimer()">Disclaimer</button>
       </div>
     </div>
   </footer>
+
+  <script src="icons.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,164 +1,239 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chambers &amp; Contact | Corpus Droit</title>
+  <title>Contact — Corpus Droit</title>
+  <meta name="description" content="Contact Corpus Droit chambers in Mumbai and Kochi. Instruct counsel for vessel arrest, arbitration, and commercial maritime matters.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
 </head>
-<body class="bg-brand-ivory-50 text-brand-ink-800 antialiased">
+<body>
 
-  <div class="bg-brand-red-950 text-brand-ivory-100 text-[11px] py-2 px-4 sm:px-8 border-b border-brand-brass/30">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <span class="flex items-center gap-2 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 24/7 Admiralty &amp; Maritime Casualty Desk</span>
-      <a href="tel:+919744093339" class="hover:text-brand-brass transition font-semibold">+91 974409 3339</a>
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div class="top-strip__inner">
+      <div class="top-strip__status">
+        <span class="pulse-dot"></span>
+        <span>Chambers Open</span>
+        <span class="top-strip__location">· Mumbai &amp; Kochi</span>
+      </div>
+      <div class="top-strip__contacts">
+        <a href="tel:+919999999999">
+          <i data-lucide="phone-call" class="w-3 h-3"></i>
+          <span>Emergency: +91 99999 99999</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <header class="sticky top-0 z-50 glass-ivory">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3.5">
-        <div class="w-10 h-10 rounded-[3px] bg-brand-red-800 text-brand-ivory-50 font-logo font-bold text-lg flex items-center justify-center border border-brand-brass/40">CD</div>
-        <div class="flex flex-col">
-          <span class="font-logo text-xl sm:text-2xl font-bold tracking-[0.16em] text-brand-red-950">CORPUS DROIT</span>
-          <span class="text-[9px] tracking-[0.26em] text-brand-red-800 uppercase font-bold -mt-0.5">Lawyers &amp; Consultants</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="corpus droit index.html" class="logo">
+        <div class="logo__mark">CD</div>
+        <div class="logo__text">
+          <span class="logo__name">CORPUS DROIT</span>
+          <span class="logo__sub">Advocates &amp; Maritime Legal Consultants</span>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-brand-ink-800">
-        <a href="index.html" class="hover:text-brand-red-800 transition">Overview</a>
-        <a href="practices.html" class="hover:text-brand-red-800 transition">Practice Areas</a>
-        <a href="dispute-resolution.html" class="hover:text-brand-red-800 transition">Dispute Resolution</a>
-        <a href="insights.html" class="hover:text-brand-red-800 transition">Insights &amp; Statutes</a>
-        <a href="contact.html" class="px-5 py-2.5 bg-brand-red-800 text-brand-ivory-50 rounded-[3px]">Chambers &amp; Contact</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="corpus droit index.html">Home</a></li>
+          <li><a href="practices.html">Practice Areas</a></li>
+          <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" class="btn-cta nav-active">Consult</a></li>
+        </ul>
       </nav>
-      <button id="mobileMenuBtn" class="lg:hidden text-brand-red-950 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </div>
-    <div id="mobileMenu" class="hidden lg:hidden bg-brand-ivory-50 border-t border-brand-ivory-200 px-6 py-5 space-y-3 text-xs font-bold uppercase tracking-wider">
-      <a href="index.html" class="block py-2">Overview</a>
-      <a href="practices.html" class="block py-2">Practice Areas</a>
-      <a href="dispute-resolution.html" class="block py-2">Dispute Resolution</a>
-      <a href="insights.html" class="block py-2">Insights &amp; Statutes</a>
-      <a href="contact.html" class="block py-2 text-brand-red-800">Chambers &amp; Contact</a>
-    </div>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="corpus droit index.html">Home</a></li>
+      <li><a href="practices.html">Practice Areas</a></li>
+      <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html" class="nav-active">Consult</a></li>
+    </ul>
   </header>
 
-  <main>
-    <section class="bg-brand-red-950 text-brand-ivory-50 py-20 border-b-2 border-brand-brass/40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 max-w-3xl">
-        <span class="text-[11px] font-bold text-brand-brass uppercase tracking-[0.18em]">— Chambers &amp; Communications</span>
-        <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2 mb-4">Engage Corpus Droit</h1>
-        <p class="text-sm text-brand-ivory-200 leading-relaxed">
-          Accessible 24x7 for urgent maritime casualties, vessel arrests, and commercial consultations from our Ernakulam Chambers.
-        </p>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1600&q=80" alt="Chambers entrance" loading="eager">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content" style="text-align:center;">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:var(--space-4);">
+        <i data-lucide="phone-call" class="w-3 h-3"></i>
+        <span>Instruct Counsel</span>
       </div>
-    </section>
+      <h1>Contact Chambers</h1>
+      <p>Reach our Mumbai or Kochi offices. Emergency admiralty counsel available 24/7.</p>
+    </div>
+  </section>
 
-    <section class="py-20 bg-brand-ivory-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <!-- LEFT COLUMN: CHAMBERS & CAREERS -->
-        <div class="lg:col-span-5 space-y-6">
-          <div class="bg-brand-ivory-50 p-8 rounded-md border border-brand-ivory-200 shadow-sm">
-            <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-4 flex items-center gap-2">
-              <i data-lucide="map-pin" class="w-5 h-5 text-brand-red-800"></i> Central Chambers
-            </h3>
-            <p class="text-xs text-brand-ink-600 leading-relaxed mb-6">
-              <strong>Corpus Droit &mdash; Lawyers &amp; Consultants</strong><br>
-              41/690B, Eashwara Iyer Road, Pulleppady<br>
-              (Near Padma Jn &ndash; Chittoor Road)<br>
-              Ernakulam, Kerala &ndash; 682035, India
-            </p>
-            <div class="space-y-3 text-xs text-brand-ink-800 border-t border-brand-ivory-200 pt-5">
-              <div><strong>Mobile (24/7):</strong> <a href="tel:+919744093339" class="text-brand-red-800 font-bold hover:underline">+91 974409 3339</a></div>
-              <div><strong>Land Phone:</strong> <a href="tel:+914843933339" class="text-brand-red-800 font-bold hover:underline">+91 484 393 3339</a></div>
-              <div><strong>General Desk:</strong> <a href="mailto:info@corpusdroit.com" class="text-brand-red-800 font-bold hover:underline">info@corpusdroit.com</a></div>
-              <div><strong>Senior Counsel:</strong> <a href="mailto:vivek@corpusdroit.com" class="text-brand-red-800 font-bold hover:underline">vivek@corpusdroit.com</a></div>
-              <div><strong>Associates:</strong> <a href="mailto:associate@corpusdroit.com" class="text-brand-red-800 font-bold hover:underline">associate@corpusdroit.com</a></div>
+  <!-- Contact Content -->
+  <section style="padding:var(--space-20) 0;background-color:var(--ivory-50);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr;gap:var(--space-6);margin-bottom:var(--space-14);">
+
+        <!-- Left column: chambers + careers -->
+        <div style="display:grid;grid-template-columns:1fr;gap:var(--space-6);max-width:480px;">
+
+          <div class="contact-box">
+            <h3><i data-lucide="map-pin" class="w-4 h-4"></i> Mumbai Chambers</h3>
+            <address>
+              <strong>1203, Peninsula Centre</strong><br>
+              Dr. S. S. Rao Road, Parel<br>
+              Mumbai — 400 012<br>
+              Maharashtra, India
+            </address>
+            <div class="contact-details">
+              <div>
+                <i data-lucide="phone-call" class="w-3 h-3" style="display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+                Emergency (24/7): <a href="tel:+919999999999">+91 99999 99999</a>
+              </div>
+              <div>
+                <i data-lucide="file-text" class="w-3 h-3" style="display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+                Admiralty: <a href="mailto:admiralty@corpusdroit.com">admiralty@corpusdroit.com</a>
+              </div>
+              <div>
+                <i data-lucide="file-text" class="w-3 h-3" style="display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+                General: <a href="mailto:info@corpusdroit.com">info@corpusdroit.com</a>
+              </div>
+              <div style="margin-top:var(--space-2);font-size:11px;color:var(--ink-600);">
+                <strong>Office hours:</strong> Mon–Fri, 9:30 AM – 6:30 PM IST
+              </div>
             </div>
           </div>
 
-          <div class="bg-brand-red-950 text-brand-ivory-50 p-8 rounded-md border border-brand-brass/40">
-            <span class="text-[10px] font-bold text-brand-brass uppercase tracking-widest">Opportunities</span>
-            <h3 class="font-serif text-xl font-bold mt-1 mb-3">Careers &amp; Internships</h3>
-            <p class="text-xs text-brand-ivory-200 leading-relaxed mb-3">
-              <strong>Careers:</strong> Applications invited for Partners, Associates, and Legal Executives (aptitude test + two interview rounds).
-            </p>
-            <p class="text-xs text-brand-ivory-200 leading-relaxed mb-5">
-              <strong>Internships:</strong> 15 days to 2 months exposure to client conferences, High Court sessions, and ADR hearings.
-            </p>
-            <a href="mailto:associate@corpusdroit.com" class="text-xs font-bold text-brand-brass hover:underline">Email CV to associate@corpusdroit.com &rarr;</a>
+          <div class="contact-box">
+            <h3><i data-lucide="map-pin" class="w-4 h-4"></i> Kochi Correspondent</h3>
+            <address>
+              <strong>Marine Drive Chambers</strong><br>
+              Ernakulam, Kochi — 682 031<br>
+              Kerala, India
+            </address>
+            <div class="contact-details">
+              <div>
+                <i data-lucide="phone-call" class="w-3 h-3" style="display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+                Kochi: <a href="tel:+914842000000">+91 484 200 0000</a>
+              </div>
+              <div>
+                <i data-lucide="file-text" class="w-3 h-3" style="display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+                <a href="mailto:kochi@corpusdroit.com">kochi@corpusdroit.com</a>
+              </div>
+              <div style="margin-top:var(--space-2);font-size:11px;color:var(--ink-600);">
+                Kerala High Court admiralty cases &amp; Cochin Port matters
+              </div>
+            </div>
           </div>
+
+          <div class="careers-box">
+            <div class="careers-box__label">Join the Chambers</div>
+            <h3>Careers</h3>
+            <p>Corpus Droit periodically accepts briefing juniors, trainee advocates, and experienced counsel into our maritime and commercial practice groups.</p>
+            <p>We look for intellectual rigour, commercial judgment, and a genuine interest in maritime law.</p>
+            <a href="mailto:careers@corpusdroit.com">careers@corpusdroit.com →</a>
+          </div>
+
         </div>
 
-        <!-- RIGHT COLUMN: INTAKE FORM -->
-        <div class="lg:col-span-7 bg-brand-ivory-50 p-8 sm:p-10 rounded-md border border-brand-ivory-200 shadow-sm">
-          <h3 class="font-serif text-2xl font-bold text-brand-ink-950 mb-2">Formal Consultation &amp; Case Intake</h3>
-          <p class="text-xs text-brand-ink-600 mb-8">Submit your instructions below. All communications are handled with strict confidentiality.</p>
+      </div>
 
-          <form id="inquiryForm" class="space-y-5">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Full Name *</label>
-                <input type="text" required class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Organization / Vessel / Entity</label>
-                <input type="text" class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800">
-              </div>
+      <!-- Intake Form -->
+      <div class="intake-form-box" style="max-width:720px;">
+        <h3>Brief Corpus Droit</h3>
+        <p>Use this form for new matter enquiries, retainer discussions, or general correspondence. For vessel arrest or emergency relief, please call our 24/7 line directly.</p>
+
+        <!-- Success message (hidden by default) -->
+        <div class="form-success" id="formSuccess">
+          <h4>Brief Received</h4>
+          <p>Thank you for contacting Corpus Droit. A member of our team will respond within one business day. For urgent matters, please call our emergency line at +91 99999 99999.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name *</label>
+              <input class="form-input" type="text" id="firstName" name="firstName" required placeholder="Rahul">
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Email Address *</label>
-                <input type="email" required class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800">
-              </div>
-              <div>
-                <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Phone / Mobile *</label>
-                <input type="tel" required class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800">
-              </div>
+            <div class="form-field">
+              <label for="lastName">Last Name *</label>
+              <input class="form-input" type="text" id="lastName" name="lastName" required placeholder="Sharma">
             </div>
-
-            <div>
-              <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Matter Category *</label>
-              <select class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800">
-                <option>Urgent Vessel Arrest / Admiralty In-Rem</option>
-                <option>Charterparty &amp; Cargo Dispute</option>
-                <option>Commercial Arbitration &amp; Foreign Award Enforcement</option>
-                <option>Ship Finance, Mortgages &amp; S&amp;P</option>
-                <option>Banking, SARFAESI &amp; Corporate Retainer</option>
-                <option>Careers / Internship Application</option>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email Address *</label>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="counsel@example.com">
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="organisation">Organisation / Vessel</label>
+              <input class="form-input" type="text" id="organisation" name="organisation" placeholder="ABC Shipping Pte Ltd / MV Example">
+            </div>
+            <div class="form-field">
+              <label for="matterType">Matter Type *</label>
+              <select class="form-input" id="matterType" name="matterType" required>
+                <option value="" disabled selected>Select matter type</option>
+                <option value="vessel-arrest">Vessel Arrest / Release</option>
+                <option value="charterparty">Charterparty / B/L Dispute</option>
+                <option value="ship-finance">Ship Finance / Mortgage</option>
+                <option value="arbitration">Arbitration</option>
+                <option value="sarfaesi">SARFAESI / DRT / IBC</option>
+                <option value="corporate">Corporate / FDI</option>
+                <option value="aviation">Aviation / Tax</option>
+                <option value="retainer">Panel Retainer Discussion</option>
+                <option value="careers">Careers Enquiry</option>
+                <option value="other">Other</option>
               </select>
             </div>
-
-            <div>
-              <label class="block text-xs font-bold text-brand-ink-800 mb-1.5">Brief Summary of Matter *</label>
-              <textarea rows="4" required class="w-full px-3.5 py-2.5 text-xs bg-brand-ivory-50 border border-brand-ivory-300 rounded-[3px] focus:outline-none focus:border-brand-red-800"></textarea>
-            </div>
-
-            <button type="submit" class="px-8 py-3.5 bg-brand-red-800 text-brand-ivory-50 text-xs font-bold uppercase tracking-widest rounded-[3px] hover:bg-brand-red-700 transition shadow-md">
-              Submit Legal Inquiry
-            </button>
-          </form>
-
-          <div id="formSuccess" class="hidden p-6 bg-brand-red-100 border border-brand-red-800/30 rounded-md text-brand-red-950">
-            <h4 class="font-serif text-lg font-bold mb-1">Inquiry Recorded</h4>
-            <p class="text-xs leading-relaxed">Thank you. Your message has been logged with the Chambers Registry. For urgent maritime casualties, please call <strong>+91 974409 3339</strong> directly.</p>
           </div>
-        </div>
+          <div class="form-field form-input--full">
+            <label for="brief">Brief / Message *</label>
+            <textarea class="form-input" id="brief" name="brief" rows="5" required placeholder="Please describe your matter, including the vessel name (if applicable), ports involved, and the nature of the dispute or advice required..."></textarea>
+          </div>
+          <div style="display:flex;justify-content:flex-end;">
+            <button type="submit" class="btn btn-dark">
+              Submit Brief
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </form>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="bg-brand-red-950 text-brand-ivory-200 py-10 border-t-2 border-brand-brass/40 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div>&copy; 2013 &ndash; 2026 Corpus Droit. Lawyers &amp; Consultants, Ernakulam.</div>
-      <button onclick="reopenDisclaimer()" class="hover:text-brand-brass">Bar Council Disclaimer</button>
+  <!-- Footer -->
+  <footer class="site-footer-simple">
+    <div class="site-footer-simple__inner">
+      <div>
+        <span style="font-family:var(--font-logo);font-weight:700;letter-spacing:0.14em;color:var(--ivory-50);">CORPUS DROIT</span>
+        <span style="margin-left:12px;">© 2024 All Rights Reserved.</span>
+      </div>
+      <div class="site-footer-simple__links">
+        <a href="corpus droit index.html">Home</a>
+        <a href="practices.html">Practices</a>
+        <a href="dispute-resolution.html">Disputes</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="reopenDisclaimer()">Disclaimer</button>
+      </div>
     </div>
   </footer>
+
+  <script src="icons.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

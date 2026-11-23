@@ -1,187 +1,246 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice Areas | Corpus Droit</title>
+  <title>Practice Areas — Corpus Droit</title>
+  <meta name="description" content="Corpus Droit's practice areas span admiralty law, charterparties, ship finance, banking & SARFAESI, corporate & FDI, and aviation & tax.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
 </head>
-<body class="bg-brand-ivory-50 text-brand-ink-800 antialiased">
+<body>
 
-  <!-- TOP STRIP -->
-  <div class="bg-brand-red-950 text-brand-ivory-100 text-[11px] py-2 px-4 sm:px-8 border-b border-brand-brass/30">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <span class="flex items-center gap-2 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 24/7 Admiralty &amp; Maritime Casualty Desk</span>
-      <a href="tel:+919744093339" class="hover:text-brand-brass transition font-semibold">+91 974409 3339</a>
+  <!-- Top Strip -->
+  <div class="top-strip">
+    <div class="top-strip__inner">
+      <div class="top-strip__status">
+        <span class="pulse-dot"></span>
+        <span>Chambers Open</span>
+        <span class="top-strip__location">· Mumbai &amp; Kochi</span>
+      </div>
+      <div class="top-strip__contacts">
+        <a href="tel:+919999999999">
+          <i data-lucide="phone-call" class="w-3 h-3"></i>
+          <span>Emergency Admiralty: +91 99999 99999</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 glass-ivory">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3.5">
-        <div class="w-10 h-10 rounded-[3px] bg-brand-red-800 text-brand-ivory-50 font-logo font-bold text-lg flex items-center justify-center border border-brand-brass/40">CD</div>
-        <div class="flex flex-col">
-          <span class="font-logo text-xl sm:text-2xl font-bold tracking-[0.16em] text-brand-red-950">CORPUS DROIT</span>
-          <span class="text-[9px] tracking-[0.26em] text-brand-red-800 uppercase font-bold -mt-0.5">Lawyers &amp; Consultants</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="corpus droit index.html" class="logo">
+        <div class="logo__mark">CD</div>
+        <div class="logo__text">
+          <span class="logo__name">CORPUS DROIT</span>
+          <span class="logo__sub">Advocates &amp; Maritime Legal Consultants</span>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-brand-ink-800">
-        <a href="index.html" class="hover:text-brand-red-800 transition">Overview</a>
-        <a href="practices.html" class="nav-link-active">Practice Areas</a>
-        <a href="dispute-resolution.html" class="hover:text-brand-red-800 transition">Dispute Resolution</a>
-        <a href="insights.html" class="hover:text-brand-red-800 transition">Insights &amp; Statutes</a>
-        <a href="contact.html" class="px-5 py-2.5 bg-brand-red-800 text-brand-ivory-50 rounded-[3px] hover:bg-brand-red-700 transition">Chambers &amp; Contact</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="corpus droit index.html">Home</a></li>
+          <li><a href="practices.html" class="nav-active">Practice Areas</a></li>
+          <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" class="btn-cta">Consult</a></li>
+        </ul>
       </nav>
-      <button id="mobileMenuBtn" class="lg:hidden text-brand-red-950 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </div>
-    <div id="mobileMenu" class="hidden lg:hidden bg-brand-ivory-50 border-t border-brand-ivory-200 px-6 py-5 space-y-3 text-xs font-bold uppercase tracking-wider">
-      <a href="index.html" class="block py-2">Overview</a>
-      <a href="practices.html" class="block py-2 text-brand-red-800">Practice Areas</a>
-      <a href="dispute-resolution.html" class="block py-2">Dispute Resolution</a>
-      <a href="insights.html" class="block py-2">Insights &amp; Statutes</a>
-      <a href="contact.html" class="block py-2 text-brand-red-800">Chambers &amp; Contact</a>
-    </div>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="corpus droit index.html">Home</a></li>
+      <li><a href="practices.html" class="nav-active">Practice Areas</a></li>
+      <li><a href="dispute-resolution.html">Dispute Resolution</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Consult</a></li>
+    </ul>
   </header>
 
-  <main>
-    <!-- PAGE HERO -->
-    <section class="relative bg-brand-red-950 text-brand-ivory-50 py-20 overflow-hidden border-b-2 border-brand-brass/40">
-      <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=80" alt="Port Logistics" class="w-full h-full object-cover opacity-20">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#38070B] via-[#38070B]/90 to-[#38070B]/60"></div>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137?w=1600&q=80" alt="Shipping containers at port" loading="eager">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content" style="text-align:center;">
+      <div class="hero-badge" style="display:inline-flex;margin-bottom:var(--space-4);">
+        <i data-lucide="briefcase" class="w-3 h-3"></i>
+        <span>Areas of Expertise</span>
       </div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-8 max-w-3xl">
-        <span class="text-[11px] font-bold text-brand-brass uppercase tracking-[0.18em]">— Core Capabilities</span>
-        <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2 mb-4">Specialized Practice Areas</h1>
-        <p class="text-sm text-brand-ivory-200 leading-relaxed">
-          From urgent admiralty arrests and wet shipping casualties to corporate retainers, banking securitization, and inward Foreign Direct Investment.
-        </p>
-      </div>
-    </section>
+      <h1>Practice Areas</h1>
+      <p>Specialised legal counsel across the full spectrum of maritime, commercial, and financial law.</p>
+    </div>
+  </section>
 
-    <!-- PRACTICE GRID -->
-    <section class="py-20 bg-brand-ivory-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+  <!-- Practice Areas Grid -->
+  <section style="padding:var(--space-20) 0;background-color:var(--ivory-50);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6);">
 
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="anchor" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Law of the Sea &amp; Admiralty</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Action in-rem vessel arrests, collision and grounding liabilities, salvage, towage, MARPOL pollution defense, and statutory maritime liens.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; Admiralty Act 2017 Jurisdiction</li>
-                <li>&bull; Crew Wage &amp; Repatriation Claims</li>
-                <li>&bull; Sister Ship Arrest Proceedings</li>
-              </ul>
-            </div>
-            <a href="contact.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">Consult Maritime Desk <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+        <!-- 1. Admiralty -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="anchor" class="w-5 h-5"></i>
           </div>
-
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="file-text" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Charterparties &amp; Cargo Claims</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Voyage, time, and bareboat charterparty disputes (NYPE, Gencon, Baltime), demurrage/laytime reconciliation, and Bill of Lading cargo damage.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; Off-Hire &amp; Speed Warranties</li>
-                <li>&bull; Misdelivery &amp; Contamination Claims</li>
-                <li>&bull; General Average Advisory</li>
-              </ul>
-            </div>
-            <a href="dispute-resolution.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">View ADR Capabilities <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
-          </div>
-
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="coins" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Ship Finance &amp; S&amp;P</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Structuring Sale &amp; Purchase agreements (NSF / SSF), preferred ship mortgages, shipyard construction contracts, and vessel recycling covenants.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; Mortgage Registration &amp; Enforcement</li>
-                <li>&bull; Refund Guarantees &amp; Sea Trials</li>
-                <li>&bull; Cross-Border Vessel Leasing</li>
-              </ul>
-            </div>
-            <a href="contact.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">Request Transaction Brief <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
-          </div>
-
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="landmark" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Banking, Finance &amp; SARFAESI</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Securitization, NPA recovery before DRT/DRAT, consortium lending documentation, and corporate insolvency defense before NCLT.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; SARFAESI Enforcement Actions</li>
-                <li>&bull; IBC 2016 Creditor Representation</li>
-                <li>&bull; RBI Regulatory Compliance</li>
-              </ul>
-            </div>
-            <a href="contact.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">Connect With Banking Desk <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
-          </div>
-
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="globe" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Corporate, Contracts &amp; FDI</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Inbound Foreign Direct Investment structuring, FEMA compliance, joint ventures, company law governance, and IT software/hardware compliance.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; Joint Ventures &amp; SHA Drafting</li>
-                <li>&bull; FEMA &amp; Coastal Cabotage Norms</li>
-                <li>&bull; Competition / Anti-Trust Law</li>
-              </ul>
-            </div>
-            <a href="contact.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">Explore Retainers <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
-          </div>
-
-          <div class="heritage-card p-8 rounded-md flex flex-col justify-between">
-            <div>
-              <div class="w-11 h-11 rounded-[3px] bg-brand-red-100 text-brand-red-800 flex items-center justify-center mb-5"><i data-lucide="plane" class="w-5 h-5"></i></div>
-              <h3 class="font-serif text-xl font-bold text-brand-ink-950 mb-3">Aviation, Real Estate &amp; Tax</h3>
-              <p class="text-xs text-brand-ink-600 leading-relaxed mb-4">Air charter and multimodal logistics liability, customs valuation, GST on international freight, real estate title due diligence, and consumer defense.</p>
-              <ul class="text-[11px] text-brand-ink-600 space-y-1.5 mb-6">
-                <li>&bull; Multimodal Transport Act Claims</li>
-                <li>&bull; Direct &amp; Indirect Tax Litigation</li>
-                <li>&bull; Media Laws &amp; Consumer Forums</li>
-              </ul>
-            </div>
-            <a href="contact.html" class="text-xs font-bold text-brand-red-800 hover:underline inline-flex items-center gap-1">Schedule Consultation <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
-          </div>
-
+          <h3>Admiralty &amp; Maritime</h3>
+          <p>India's admiralty jurisdiction vests in the High Courts under the Admiralty (Jurisdiction and Settlement of Maritime Claims) Act, 2017. We are practitioners of first resort for vessel arrest, in rem proceedings, and maritime lien enforcement.</p>
+          <ul>
+            <li>Vessel arrest and release across all Indian ports</li>
+            <li>In rem and in personam admiralty suits</li>
+            <li>Maritime liens: crew wages, salvage, necessaries</li>
+            <li>Collision, grounding, and casualty response</li>
+            <li>General average and salvage contributions</li>
+            <li>P&amp;I Club liaison and Letter of Undertaking negotiation</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Instruct for Vessel Arrest <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
         </div>
 
-        <!-- RETAINER BANNER -->
-        <div class="mt-16 bg-brand-red-950 text-brand-ivory-50 rounded-md p-8 sm:p-12 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 border border-brand-brass/40">
-          <div class="max-w-2xl">
-            <span class="text-[11px] font-bold text-brand-brass uppercase tracking-widest">Engagement Models</span>
-            <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-2 mb-2">Empanelment, Retainers &amp; Case-to-Case Advisory</h3>
-            <p class="text-xs sm:text-sm text-brand-ivory-200 leading-relaxed">
-              A dispute can often be prevented when proper guidance is sought at the right time. Engage Corpus Droit on an institutional retainer or targeted mandate with guaranteed turnaround times.
-            </p>
+        <!-- 2. Charterparties -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
           </div>
-          <a href="contact.html" class="px-7 py-3.5 bg-brand-ivory-50 text-brand-red-950 font-bold text-xs uppercase tracking-widest rounded-[3px] hover:bg-brand-ivory-200 transition whitespace-nowrap">
-            Request Empanelment
+          <h3>Charterparties &amp; B/Ls</h3>
+          <p>Charterparty disputes involve layered contractual interpretation, industry custom, and often multi-jurisdictional complexity. Our team advises on the full range of charterparty forms — GENCON, NYPE, BARECON — and bills of lading disputes.</p>
+          <ul>
+            <li>Voyage, time, and bareboat charterparty disputes</li>
+            <li>Freight, demurrage, and despatch claims</li>
+            <li>Bill of lading: Hague-Visby, Hamburg Rules</li>
+            <li>Cargo damage, shortage, and contamination</li>
+            <li>Dangerous goods liability</li>
+            <li>Off-hire disputes and performance claims</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Advise on Charter Dispute <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- 3. Ship Finance -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="coins" class="w-5 h-5"></i>
+          </div>
+          <h3>Ship Finance &amp; Mortgages</h3>
+          <p>We advise lenders, shipowners, and lessors on the full lifecycle of ship finance transactions — from mandate to enforcement — with expertise in Indian and international maritime mortgage law.</p>
+          <ul>
+            <li>Ship mortgage drafting and registration</li>
+            <li>Priority of maritime liens over mortgages</li>
+            <li>Enforcement of ship mortgages in Indian courts</li>
+            <li>Bareboat charter registration (BBCHP)</li>
+            <li>Asset-based lending documentation</li>
+            <li>Restructuring and work-outs for distressed vessels</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Finance Counsel <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- 4. Banking & SARFAESI -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="landmark" class="w-5 h-5"></i>
+          </div>
+          <h3>Banking &amp; SARFAESI</h3>
+          <p>We represent banks, NBFCs, and ARCs in the enforcement of security interests and resolution of non-performing assets, with particular expertise in maritime and commercial asset recovery.</p>
+          <ul>
+            <li>SARFAESI Act enforcement for maritime assets</li>
+            <li>DRT and DRAT proceedings</li>
+            <li>IBC insolvency proceedings for shipping companies</li>
+            <li>NCLT and NCLAT maritime insolvency</li>
+            <li>Guarantee enforcement and recovery suits</li>
+            <li>Debt restructuring under RBI frameworks</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Recovery Counsel <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- 5. Corporate & FDI -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="globe-2" class="w-5 h-5"></i>
+          </div>
+          <h3>Corporate &amp; FDI</h3>
+          <p>India's maritime sector involves complex regulatory frameworks — from DG Shipping approvals to FEMA-compliant FDI structures. We advise shipping companies and investors on corporate and regulatory matters.</p>
+          <ul>
+            <li>Company formation for Indian shipping entities</li>
+            <li>FDI structuring in maritime and port sectors</li>
+            <li>DG Shipping and MMD approvals</li>
+            <li>Joint ventures and consortium agreements</li>
+            <li>M&amp;A due diligence for fleet acquisitions</li>
+            <li>Sagarmala and port privatisation advisory</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Corporate Advisory <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- 6. Aviation & Tax -->
+        <div class="heritage-card" style="padding:var(--space-8);">
+          <div class="heritage-card__icon">
+            <i data-lucide="plane" class="w-5 h-5"></i>
+          </div>
+          <h3>Aviation &amp; Tax</h3>
+          <p>Our aviation practice covers aircraft finance, leasing, and regulatory compliance. We also advise on the customs, GST, and direct tax implications of maritime and aviation transactions.</p>
+          <ul>
+            <li>Aircraft lease structuring and DGCA approvals</li>
+            <li>Cape Town Convention rights in India</li>
+            <li>Air cargo disputes and AWB claims</li>
+            <li>Customs and IGST on vessel imports</li>
+            <li>GST on maritime services and freight</li>
+            <li>Transfer pricing for shipping companies</li>
+          </ul>
+          <a href="contact.html" class="heritage-card__link">
+            Aviation &amp; Tax Advisory <i data-lucide="arrow-right" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Retainer CTA -->
+      <div class="cta-banner">
+        <div>
+          <div class="cta-banner__label">Annual Retainer</div>
+          <h3>Panel Retainer Arrangements</h3>
+          <p>Shipping companies, P&amp;I clubs, and lenders benefit from our annual panel retainer — providing priority access, discounted hourly rates, and dedicated counsel allocation for recurring matters.</p>
+        </div>
+        <div style="flex-shrink:0;">
+          <a href="contact.html" class="btn btn-ivory-dark">
+            Discuss Retainer Terms
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="bg-brand-red-950 text-brand-ivory-200 py-10 border-t-2 border-brand-brass/40 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div>&copy; 2013 &ndash; 2026 Corpus Droit. Lawyers &amp; Consultants, Ernakulam.</div>
-      <div class="flex gap-6">
-        <button onclick="reopenDisclaimer()" class="hover:text-brand-brass">Bar Council Disclaimer</button>
-        <a href="contact.html" class="text-brand-brass font-bold">Contact Chambers</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer-simple">
+    <div class="site-footer-simple__inner">
+      <div>
+        <span style="font-family:var(--font-logo);font-weight:700;letter-spacing:0.14em;color:var(--ivory-50);">CORPUS DROIT</span>
+        <span style="margin-left:12px;">© 2024 All Rights Reserved.</span>
+      </div>
+      <div class="site-footer-simple__links">
+        <a href="corpus droit index.html">Home</a>
+        <a href="practices.html">Practices</a>
+        <a href="dispute-resolution.html">Disputes</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <button onclick="reopenDisclaimer()">Disclaimer</button>
       </div>
     </div>
   </footer>
+
+  <script src="icons.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

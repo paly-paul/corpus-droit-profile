@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights &amp; Statutory Library | Corpus Droit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body class="bg-brand-ivory-50 text-brand-ink-800 antialiased">
+
+  <div class="bg-brand-red-950 text-brand-ivory-100 text-[11px] py-2 px-4 sm:px-8 border-b border-brand-brass/30">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <span class="flex items-center gap-2 font-semibold"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> 24/7 Admiralty &amp; Maritime Casualty Desk</span>
+      <a href="tel:+919744093339" class="hover:text-brand-brass transition font-semibold">+91 974409 3339</a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 glass-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-[3px] bg-brand-red-800 text-brand-ivory-50 font-logo font-bold text-lg flex items-center justify-center border border-brand-brass/40">CD</div>
+        <div class="flex flex-col">
+          <span class="font-logo text-xl sm:text-2xl font-bold tracking-[0.16em] text-brand-red-950">CORPUS DROIT</span>
+          <span class="text-[9px] tracking-[0.26em] text-brand-red-800 uppercase font-bold -mt-0.5">Lawyers &amp; Consultants</span>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-brand-ink-800">
+        <a href="index.html" class="hover:text-brand-red-800 transition">Overview</a>
+        <a href="practices.html" class="hover:text-brand-red-800 transition">Practice Areas</a>
+        <a href="dispute-resolution.html" class="hover:text-brand-red-800 transition">Dispute Resolution</a>
+        <a href="insights.html" class="nav-link-active">Insights &amp; Statutes</a>
+        <a href="contact.html" class="px-5 py-2.5 bg-brand-red-800 text-brand-ivory-50 rounded-[3px] hover:bg-brand-red-700 transition">Chambers &amp; Contact</a>
+      </nav>
+      <button id="mobileMenuBtn" class="lg:hidden text-brand-red-950 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-ivory-50 border-t border-brand-ivory-200 px-6 py-5 space-y-3 text-xs font-bold uppercase tracking-wider">
+      <a href="index.html" class="block py-2">Overview</a>
+      <a href="practices.html" class="block py-2">Practice Areas</a>
+      <a href="dispute-resolution.html" class="block py-2">Dispute Resolution</a>
+      <a href="insights.html" class="block py-2 text-brand-red-800">Insights &amp; Statutes</a>
+      <a href="contact.html" class="block py-2 text-brand-red-800">Chambers &amp; Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-brand-red-950 text-brand-ivory-50 py-20 border-b-2 border-brand-brass/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 max-w-3xl">
+        <span class="text-[11px] font-bold text-brand-brass uppercase tracking-[0.18em]">— Library &amp; Thought Leadership</span>
+        <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2 mb-4">Publications &amp; Legal Norms</h1>
+        <p class="text-sm text-brand-ivory-200 leading-relaxed">
+          Staging interdisciplinary legal views from our partners, associates, and guest contributors. We also invite short articles on divergent legal issues via email or post.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-brand-ivory-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <!-- Interactive Category Filters -->
+        <div class="flex flex-wrap gap-3 mb-10">
+          <button data-filter="all" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-red-800 text-brand-ivory-50 transition">All Briefs</button>
+          <button data-filter="admiralty" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Admiralty</button>
+          <button data-filter="arbitration" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Arbitration</button>
+          <button data-filter="regulatory" class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-[3px] bg-brand-ivory-100 text-brand-ink-800 hover:bg-brand-ivory-200 transition">Port &amp; Regulatory</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <article data-category="admiralty" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" alt="Vessel at Sea" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Admiralty Jurisprudence</span>
+              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Beneficial Ownership in Sister Ship Arrests</h3>
+              <p class="text-xs text-brand-ink-600 leading-relaxed">Analyzing how Indian High Courts evaluate corporate veils and bareboat charters under the Admiralty Act 2017.</p>
+            </div>
+            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
+              <span class="text-brand-ink-400">Maritime Desk</span>
+              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
+            </div>
+          </article>
+
+          <article data-category="arbitration" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
+            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Law Library" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Commercial Arbitration</span>
+              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Enforcing Foreign Maritime Awards in India</h3>
+              <p class="text-xs text-brand-ink-600 leading-relaxed">Navigating Section 48 of the Arbitration &amp; Conciliation Act and the narrowed scope of public policy objections.</p>
+            </div>
+            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
+              <span class="text-brand-ink-400">ADR Practice</span>
+              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
+            </div>
+          </article>
+
+          <article data-category="regulatory" class="heritage-card rounded-md overflow-hidden flex flex-col justify-between">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Container Terminal" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <span class="text-[10px] font-bold text-brand-red-800 uppercase tracking-widest">Port Regulations</span>
+              <h3 class="font-serif text-lg font-bold text-brand-ink-950 mt-2 mb-2">Major Port Authorities Act &amp; Terminal Concessions</h3>
+              <p class="text-xs text-brand-ink-600 leading-relaxed">Market-driven port tariffs, PPP concession frameworks, and statutory dispute adjudication boards.</p>
+            </div>
+            <div class="px-6 pb-6 pt-3 border-t border-brand-ivory-200 flex justify-between items-center text-[11px]">
+              <span class="text-brand-ink-400">Regulatory Desk</span>
+              <a href="contact.html" class="font-bold text-brand-red-800 hover:underline">Request Full Paper &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- STATUTORY NORMS DIRECTORY -->
+        <div class="p-8 bg-brand-ivory-100 border border-brand-ivory-200 rounded-md">
+          <h3 class="font-serif text-2xl font-bold text-brand-ink-950 mb-2">Legal Norms &amp; Statutory Repository</h3>
+          <p class="text-xs text-brand-ink-600 mb-6">Core legislative texts frequently referenced in maritime and commercial mandates.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 bg-brand-ivory-50 border border-brand-ivory-200 rounded flex justify-between items-center">
+              <div>
+                <strong class="text-brand-ink-950">Admiralty (Jurisdiction &amp; Settlement of Maritime Claims) Act, 2017</strong>
+                <p class="text-[11px] text-brand-ink-600 mt-0.5">Section 4 maritime claims, arrest jurisdiction &amp; priority of liens</p>
+              </div>
+              <a href="contact.html" class="text-brand-red-800 font-bold hover:underline ml-4 whitespace-nowrap">Request Copy</a>
+            </div>
+            <div class="p-4 bg-brand-ivory-50 border border-brand-ivory-200 rounded flex justify-between items-center">
+              <div>
+                <strong class="text-brand-ink-950">Arbitration and Conciliation Act, 1996</strong>
+                <p class="text-[11px] text-brand-ink-600 mt-0.5">UNCITRAL Model Law &amp; New York / Geneva Convention enforcement</p>
+              </div>
+              <a href="contact.html" class="text-brand-red-800 font-bold hover:underline ml-4 whitespace-nowrap">Request Copy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-red-950 text-brand-ivory-200 py-10 border-t-2 border-brand-brass/40 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>&copy; 2013 &ndash; 2026 Corpus Droit. Lawyers &amp; Consultants, Ernakulam.</div>
+      <div class="flex gap-6">
+        <button onclick="reopenDisclaimer()" class="hover:text-brand-brass">Bar Council Disclaimer</button>
+        <a href="contact.html" class="text-brand-brass font-bold">Contact Chambers</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

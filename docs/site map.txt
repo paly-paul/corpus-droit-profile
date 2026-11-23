@@ -1,0 +1,8 @@
+corpus-droit-site/
+├── index.html              (Home / Overview, Lead Counsel, Arrest Workflow Infographic)
+├── practices.html          (Detailed Practice Areas, Retainer Models, Sectors)
+├── dispute-resolution.html (Litigation, UNCITRAL Arbitration, Foreign Award Enforcement)
+├── insights.html           (Publications, Case Briefs, Statutory Norms Repository)
+├── contact.html            (24/7 Casualty Desk, Chambers Info, Careers & Intake Form)
+├── styles.css              (Custom Ivory/Oxblood Glassmorphism & Typography Tokens)
+└── main.js                 (Disclaimer Modal, Mobile Nav, Interactive Tabs & Forms)
